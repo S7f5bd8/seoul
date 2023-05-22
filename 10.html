@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function changeImage(){
+            var select1 = document.getElementById("fruit");
+            var img1 = document.getElementById("imgFruit");
+
+            var path = select1.options[select1.selectedIndex].value;
+            alert(path);
+        }
+    </script>
+</head>
+<body>
+    <form action="">
+        <select id="fruit">
+            <option value="imgs/apple.jpg">APPLE</option>
+            <option value="imgs/kiwi.jpg">KIWI</option>
+            <option value="imgs/orange.jpg">ORANGE</option>
+            <option value="imgs/banana.jpg">BANANA</option>
+        </select>
+        <button id = "btn" onclick="changeImage()" type="button">이미지변경</button>
+        <br>
+        <img src="" id="imgFruit">
+    </form>
+</body>
+</html>
